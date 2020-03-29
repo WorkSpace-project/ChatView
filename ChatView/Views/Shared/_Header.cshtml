@@ -183,6 +183,24 @@
         </div> <!-- end container-fluid-->
     </div>
 </header>
+<div class="right-bar">
+    <div class="rightbar-title">
+        <a href="javascript:void(0);" class="right-bar-toggle float-right">
+            <i class="dripicons-cross noti-icon"></i>
+        </a>
+        <h5 class="m-0 text-white">Customers</h5>
+    </div>
+    <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 396px;">
+        <div id="customers" class="slimscroll-menu rightbar-content" style="overflow: hidden; width: auto; height: 396px;">
+            <!-- Timeline -->
+            <div id="customers">
+                @*<hr class="mt-0">
+                <h5 class="pl-3 pr-3">Sadaqat<span class="float-right badge badge-pill badge-danger">25</span></h5>
+                <hr class="mb-0">*@
+            </div>
+        </div><div class="slimScrollBar" style="background: rgb(158, 165, 171); width: 8px; position: absolute; top: -219.925px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 169.714px;"></div><div class="slimScrollRail" style="width: 8px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div>
+    </div> <!-- end slimscroll-menu-->
+</div>
 <input type="hidden" id="currentuserid" value="@Model.Id" />
 <input type="hidden" id="currentusername" value="@Model.FirstName" />
 <input type="hidden" id="currentusercode" value="@Model.CustomerCode" />
