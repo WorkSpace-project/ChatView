@@ -1,0 +1,35 @@
+﻿table tbody {
+    display: block;
+    height: 420px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+    table thead, table tbody tr {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+    }
+.childtdstyle {
+        border: 1px solid black;
+    }
+.categorystyle {
+    width: 60px;
+}
+.childrow {
+    overflow: hidden;
+    height: 14px;
+    white-space: nowrap;
+}
+.activetr {
+    background-color:lightgray;
+}
+.particular {
+    /*display: inline-block;
+    word-wrap: break-word;*/
+    overflow-x: auto;
+}
+#mainarea {
+    margin-top: -51px;
+}
+

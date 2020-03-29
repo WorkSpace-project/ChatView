@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat View</title>
+    <environment include="Development">
+        <link href="~/css/custom.css" rel="stylesheet" />
+        <link href="~/css/app.min.css" rel="stylesheet" />
+        <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="~/css/icons.min.css" rel="stylesheet" />
+        <link href="~/libs/animate/animate.min.css" rel="stylesheet" />
+        <link href="~/libs/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet" />
+        <link href="~/libs/jsgrid/jsgrid-theme.css" rel="stylesheet" />
+        <link href="~/libs/jsgrid/jsgrid.min.css" rel="stylesheet" />
+        <link href="~/libs/tablesaw/tablesaw.css" rel="stylesheet" />
+        <link href="~/libs/rwd-table/rwd-table.min.css" rel="stylesheet" />
+
+        @*<link href="~/libs/bootstrap-colorpicker/bootstrap-colorpicker.min.css" rel="stylesheet" />
+        <link href="~/libs/x-editable/bootstrap-editable.css" rel="stylesheet" />
+        <link href="~/libs/switchery/switchery.min.css" rel="stylesheet" />
+        <link href="~/libs/sweetalert2/sweetalert2.min.css" rel="stylesheet" />
+        <link href="~/libs/select2/select2.min.css" rel="stylesheet" />
+        <link href="~/libs/rickshaw/rickshaw.min.css" rel="stylesheet" />
+        <link href="~/libs/nestable2/jquery.nestable.min.css" rel="stylesheet" />
+        <link href="~/libs/multiselect/multi-select.css" rel="stylesheet" />
+        <link href="~/libs/jquery-toast/jquery.toast.min.css" rel="stylesheet" />
+        <link href="~/libs/jquery-nice-select/nice-select.css" rel="stylesheet" />
+        <link href="~/libs/ion-rangeslider/ion.rangeSlider.css" rel="stylesheet" />
+        <link href="~/libs/hopscotch/hopscotch.min.css" rel="stylesheet" />
+        <link href="~/libs/fullcalendar/fullcalendar.min.css" rel="stylesheet" />
+        <link href="~/libs/flatpickr/flatpickr.min.css" rel="stylesheet" />
+        <link href="~/libs/dropzone/dropzone.min.css" rel="stylesheet" />
+        <link href="~/libs/dropify/dropify.min.css" rel="stylesheet" />
+        <link href="~/libs/custombox/custombox.min.css" rel="stylesheet" />
+        <link href="~/libs/cropper/cropper.min.css" rel="stylesheet" />
+        <link href="~/libs/clockpicker/bootstrap-clockpicker.min.css" rel="stylesheet" />
+        <link href="~/libs/chartist/chartist.min.css" rel="stylesheet" />
+        <link href="~/libs/c3/c3.min.css" rel="stylesheet" />
+        <link href="~/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.css" rel="stylesheet" />
+        <link href="~/libs/bootstrap-table/bootstrap-table.min.css" rel="stylesheet" />
+        <link href="~/libs/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" />*@
+
+
+        <link href="~/css/alertify.min.css" rel="stylesheet" />
+        <link href="~/css/waitMe.min.css" rel="stylesheet" />
+
+    </environment>
+    <environment exclude="Development">
+    </environment>
+</head>
+<body>
+    @Html.Partial("_Header")
+        <div class="wrapper">
+            <div class="container-fluid">
+                <div id="mainarea">
+                    @RenderBody()
+                </div>
+            </div>
+    </div>
+    @Html.Partial("_Footer")
+<environment include="Development">
+    <!--custom files-->
+    <script src="~/js/Custom/Dashboard.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script src="~/js/vendor.min.js"></script>
+    <script src="~/js/app.min.js"></script>
+    <script src="~/libs/bootstrap-select/bootstrap-select.min.js"></script>
+    <script src="~/js/alertify.min.js"></script>
+    <script src="~/js/notify.min.js"></script>
+    <script src="~/js/blockUI.js"></script>
+    <script src="~/js/waitMe.min.js"></script>
+    <script src="~/SignalR/signalr.min.js"></script>
+    <script src="~/js/Custom/Connection.js"></script>
+</environment>
+<environment exclude="Development">
+    <!--custom files-->
+    <script src="~/js/Custom/Dashboard.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script src="~/js/vendor.min.js"></script>
+    <script src="~/js/app.min.js"></script>
+    <script src="~/libs/bootstrap-select/bootstrap-select.min.js"></script>
+    <script src="~/js/alertify.min.js"></script>
+    <script src="~/js/notify.min.js"></script>
+    <script src="~/js/blockUI.js"></script>
+    <script src="~/js/waitMe.min.js"></script>
+    <script src="~/SignalR/signalr.min.js"></script>
+    <script src="~/js/Custom/Connection.js"></script>
+</environment>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
