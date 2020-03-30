@@ -4,16 +4,42 @@
 }
 <!-- end row -->
 <div class="row">
-    <div class="col-12">
-        <div class="card-box">
+    <div class="col-xl-8">
+        <div class="card text-white bg-primary text-xs-center" style="height:50px;">
+            <div class="card-body" style="padding:1.0rem">
+                Video
+            </div>
+        </div>
+        <div class="card-box cardsize">
+        </div>
+    </div>
+    <div class="col-xl-4">
+        <div class="card text-white bg-primary" style="height:50px;">
+            <div style="padding:1.0rem">
+                <label>Chat</label>
+                <i class="fe-video float-right seticon waves-effect waves-light"></i>
+                <i class="fe-phone-call float-right waves-effect waves-light"></i>
+            </div>
+        </div>
+        <div class="card-box cardsize">
+            <div class="row" style="height:95%;">
 
-        </div>  <!-- end card-box-->
-    </div> <!-- end col -->
+            </div>
+            <div class="row" style="height:5%;">
+                <div class="col-xl-10">
+                    <input type="text" placeholder="Enter Message" class="form-control">
+                </div>
+                <div class="col-xl-2">
+                    <button class="btn btn-primary waves-effect waves-light"><i class="mdi mdi-send"></i> </button>
+                </div>
+            </div>
+            </div>
+    </div>
 </div>
 <!-- end row -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script>
     $(document).ready(function () {
-           GetAllUsers();
+        GetAllUsers();
     });
 </script>

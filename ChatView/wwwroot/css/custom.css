@@ -32,4 +32,12 @@
 #mainarea {
     margin-top: -51px;
 }
-
+.cardsize {
+    height: 500px;
+    margin-top: -20px;
+    margin-bottom: 5px;
+}
+.seticon {
+    margin-left: 20px;
+    margin-right: 10px;
+}
