@@ -18,5 +18,6 @@ namespace ChatView.Models.DataContext
         public string LastName { get; set; }
         [MaxLength(100)]
         public string Password { get; set; }
+        public bool? Online { get; set; }
     }
 }

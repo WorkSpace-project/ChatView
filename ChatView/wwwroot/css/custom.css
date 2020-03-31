@@ -32,12 +32,51 @@
 #mainarea {
     margin-top: -51px;
 }
+
+.onlineuser {
+    border: 0px;
+    border-radius: 100%;
+    background-color: yellowgreen;
+    width: 15px;
+    height: 15px;
+    color: yellow;
+    margin-top: 0px;
+    position: fixed;
+    margin-left: 3px;
+    margin-right: 10px;
+}
+.offlineuser {
+    border: 0px;
+    border-radius: 100%;
+    background-color: azure;
+    border: 1px solid gray;
+    width: 15px;
+    height: 15px;
+    color: yellow;
+    margin-top: 0px;
+    position:fixed;
+    margin-left: 3px;
+    margin-right: 10px;
+}
+#customers {
+    display: block;
+    height: 420px;
+    overflow-y: scroll !important;
+}
 .cardsize {
     height: 500px;
     margin-top: -20px;
     margin-bottom: 5px;
 }
+
 .seticon {
     margin-left: 20px;
     margin-right: 10px;
+}
+
+
+.chatarea {
+    height: 95%;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }

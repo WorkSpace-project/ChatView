@@ -65,10 +65,15 @@ namespace ChatView.Controllers
             return Json(result);
         }
         [HttpPost]
-        public IActionResult LogOut()
+        public async Task<IActionResult> LogOut()
         {
             try
             {
+                UserModal user = HttpContext.Session.GetObject<UserModal>(WebUtil.User);
+                if (user !=null)
+                {
+                    await new UserHandler().OfflineUser(user.Id);
+                }
                 HttpContext.Session.Clear();
                 result = "success";
             }
